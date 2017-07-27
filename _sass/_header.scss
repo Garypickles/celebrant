@@ -1,0 +1,30 @@
+.header{
+  background-color: $main;
+  .inner-wrapper-header{
+    width: $sitewidth;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    .logo{
+      order: 2;
+      width: 300px;
+    }
+    .strap-text{
+      order: 1;
+      width: 300px;
+    }
+    .contact{
+      order: 3;
+      width: 300px;
+      text-align: right;
+    }
+  }
+  p, a{
+    color: $accent;
+    letter-spacing: 3px;
+    font-style: italic;
+  }
+}

@@ -2,6 +2,88 @@
 layout: default
 description: A very simple way to add structured data to a page.
 ---
-  <h1 class="main">Life Celebrant {{list}}</h1>
+  <h1>Life Celebrant {{list}}</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quis maiores eius, facere nisi distinctio sint voluptate! Animi inventore molestiae suscipit debitis quasi. Blanditiis dolorem labore, enim id, officiis provident.</p>
 {{ page.description }}
+
+<section>
+        <div class="flexslider" id="heroslider">
+          <ul class="slides">
+            <li>
+  	    	    <img src="http://fillmurray.com/1200/400" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="http://fillmurray.com/1201/400" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="http://fillmurray.com/1202/400" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="http://fillmurray.com/1203/400" />
+  	    		</li>
+          </ul>
+        </div>
+</section>
+
+<h1>Gary Pickles</h1>
+<section class="slider">
+  <div class="flexslider">
+    <ul class="slides">
+      <li>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </li>
+      <li>
+        <h1>Pickles</h1>
+      </li>
+      <li>
+        <h1>Aaron</h1>
+      </li>
+      <li>
+        <h1>Nell</h1>
+      </li>
+    </ul>
+  </div>
+  <div class="custom-navigation">
+    <a href="#" class="flex-prev">Prev</a>
+    <div class="custom-controls-container"></div>
+    <a href="#" class="flex-next">Next</a>
+  </div>
+</section>
+
+
+<!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(window).load(function(){
+
+      $('#heroslider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        directionNav: false,
+        slideshowSpeed: 4000,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+
+      $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        controlsContainer: $(".custom-controls-container"),
+        customDirectionNav: $(".custom-navigation a"),
+        start: function(slider){
+          // $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>

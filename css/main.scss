@@ -2,6 +2,28 @@
 ---
 
 @charset "utf-8";
-.main{
-  background: red;
+
+// variables
+$main: #465268;
+$accent: #bab17a;
+$sitewidth: 1200px;
+
+@import "normalize";
+@import "header";
+@import "flexslider";
+
+p, a{
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
 }
+.header, section{
+  width: 100%;
+}
+// .inner-wrapper{
+//   width: $sitewidth;
+//   margin: 0 auto;
+// }
+// *{
+//   border: 1px solid red;
+// }
