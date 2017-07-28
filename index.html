@@ -2,11 +2,9 @@
 layout: default
 description: A very simple way to add structured data to a page.
 ---
-  <h1>Life Celebrant {{list}}</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quis maiores eius, facere nisi distinctio sint voluptate! Animi inventore molestiae suscipit debitis quasi. Blanditiis dolorem labore, enim id, officiis provident.</p>
-{{ page.description }}
 
-<section>
+
+<div>
         <div class="flexslider" id="heroslider">
           <ul class="slides">
             <li>
@@ -23,10 +21,38 @@ description: A very simple way to add structured data to a page.
   	    		</li>
           </ul>
         </div>
+</div>
+<section>
+  <div class="inner-wrapper">
+      <h1>Life Celebrant {{list}}</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quis maiores eius, facere nisi distinctio sint voluptate! Animi inventore molestiae suscipit debitis quasi. Blanditiis dolorem labore, enim id, officiis provident.</p>
+      {{ page.description }}
+  </div>
 </section>
 
-<h1>Gary Pickles</h1>
-<section class="slider">
+<section>
+  <div class="inner-wrapper">
+      <h1>Life Celebrant {{list}}</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quis maiores eius, facere nisi distinctio sint voluptate! Animi inventore molestiae suscipit debitis quasi. Blanditiis dolorem labore, enim id, officiis provident.</p>
+      {{ page.description }}
+      <h1>Gary Pickles</h1>
+  </div>
+</section>
+<section class="about-me">
+  <div class="background-top">
+    <div class="background-image"></div>
+    <img src="images/Jeff-Heaton-about-me.png" alt="">
+    <h2>About Me</h2>
+  </div>
+  <div class="inner-wrapper">
+    <p>My name is Jeff Heaton and I live in Calderdale, West Yorkshire.</p>
+    <p>I have undertaken training number of organisations including the Fellowship of Independent Celebrants and, with many years experience have had the privilege to work with many families on many different types of ceremony and celebration.</p>
+    <p>As an independent celebrant I have the ability to provide a ceremony that will best reflect your own personal wishes and will give me the flexibility to work closely with you to tailor a service which meets all your requirements.</p>
+    <p>It would be delighted to work closely with you, guiding you through the many options, possibilities and choices to provide an individual ceremony for you.</p>
+  </div>
+</section>
+
+<div class="slider">
   <div class="flexslider">
     <ul class="slides">
       <li>
@@ -53,7 +79,7 @@ description: A very simple way to add structured data to a page.
     <div class="custom-controls-container"></div>
     <a href="#" class="flex-next">Next</a>
   </div>
-</section>
+</div>
 
 
 <!-- jQuery -->

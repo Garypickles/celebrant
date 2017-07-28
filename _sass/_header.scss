@@ -1,9 +1,10 @@
 .header{
   background-color: $main;
   .inner-wrapper-header{
-    width: $sitewidth;
+    width: 100%;
+    max-width: $sitewidth;
     margin: 0 auto;
-    padding: 40px;
+    padding: 40px 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -15,16 +16,87 @@
     .strap-text{
       order: 1;
       width: 300px;
+      p{
+        margin: 0px;
+      }
     }
     .contact{
       order: 3;
       width: 300px;
       text-align: right;
+      p{
+        margin: 0px;
+      }
     }
   }
   p, a{
     color: $accent;
     letter-spacing: 3px;
     font-style: italic;
+  }
+}
+@media only screen and (max-width:920px){
+  .header{
+    background-color: $main;
+    .inner-wrapper-header{
+      display: block;
+      padding: 20px 20px;
+      .logo{
+        margin: 0 auto;
+        width: 300px;
+      }
+      .strap-text{
+        margin: 0 auto;
+        width: 100%;
+        p{
+          margin: 3px;
+          text-align: center;
+          font-size: 14px!important;
+          color: white
+        }
+      }
+      .contact{
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        p{
+          margin: 5px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width:550px){
+  .header{
+    background-color: $main;
+    .inner-wrapper-header{
+      display: block;
+      padding: 20px 20px;
+      .logo{
+        margin: 0 auto;
+        width: 300px;
+      }
+      .strap-text{
+        margin: 0 auto;
+        width: 100%;
+        p{
+          margin: 3px;
+          text-align: center;
+          font-size: 12px!important;
+        }
+      }
+      .contact{
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+        p{
+          margin: 5px;
+          text-align: center;
+        }
+      }
+    }
   }
 }

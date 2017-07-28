@@ -1,0 +1,20 @@
+.footer-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  .footer-info{
+    padding: 0 5px;
+    p, a{
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: 200;
+    }
+    a{
+      color: $accent;
+    }
+  }
+}

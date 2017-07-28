@@ -3,6 +3,14 @@
 
 @charset "utf-8";
 
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 // variables
 $main: #465268;
 $accent: #bab17a;
@@ -10,6 +18,8 @@ $sitewidth: 1200px;
 
 @import "normalize";
 @import "header";
+@import "aboutme";
+@import "footer";
 @import "flexslider";
 
 p, a{
@@ -17,13 +27,22 @@ p, a{
   font-size: 18px;
   text-decoration: none;
 }
+h2{
+  color: $accent;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 4px;
+}
 .header, section{
   width: 100%;
 }
-// .inner-wrapper{
-//   width: $sitewidth;
-//   margin: 0 auto;
-// }
+.inner-wrapper{
+  width: 100%;
+  max-width: $sitewidth;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
 // *{
 //   border: 1px solid red;
 // }
