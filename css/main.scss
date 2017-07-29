@@ -18,10 +18,12 @@ $sitewidth: 1200px;
 
 @import "normalize";
 @import "header";
+@import "nav";
+@import "services";
 @import "aboutme";
 @import "footer";
 @import "flexslider";
-
+@import "textslider";
 p, a{
   color: #000;
   font-size: 18px;
@@ -33,6 +35,10 @@ h2{
   text-transform: uppercase;
   font-weight: 100;
   letter-spacing: 4px;
+}
+.dark-section{
+  background-color: $main;
+  color: white;
 }
 .header, section{
   width: 100%;

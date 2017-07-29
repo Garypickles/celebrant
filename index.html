@@ -24,20 +24,12 @@ description: A very simple way to add structured data to a page.
 </div>
 <section>
   <div class="inner-wrapper">
-      <h1>Life Celebrant {{list}}</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quis maiores eius, facere nisi distinctio sint voluptate! Animi inventore molestiae suscipit debitis quasi. Blanditiis dolorem labore, enim id, officiis provident.</p>
-      {{ page.description }}
+
+    {% include services.html %}
+
   </div>
 </section>
 
-<section>
-  <div class="inner-wrapper">
-      <h1>Life Celebrant {{list}}</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quis maiores eius, facere nisi distinctio sint voluptate! Animi inventore molestiae suscipit debitis quasi. Blanditiis dolorem labore, enim id, officiis provident.</p>
-      {{ page.description }}
-      <h1>Gary Pickles</h1>
-  </div>
-</section>
 <section class="about-me">
   <div class="background-top">
     <div class="background-image"></div>
@@ -45,41 +37,38 @@ description: A very simple way to add structured data to a page.
     <h2>About Me</h2>
   </div>
   <div class="inner-wrapper">
-    <p>My name is Jeff Heaton and I live in Calderdale, West Yorkshire.</p>
-    <p>I have undertaken training number of organisations including the Fellowship of Independent Celebrants and, with many years experience have had the privilege to work with many families on many different types of ceremony and celebration.</p>
-    <p>As an independent celebrant I have the ability to provide a ceremony that will best reflect your own personal wishes and will give me the flexibility to work closely with you to tailor a service which meets all your requirements.</p>
-    <p>It would be delighted to work closely with you, guiding you through the many options, possibilities and choices to provide an individual ceremony for you.</p>
+
+    {% include aboutme.html %}
+
   </div>
 </section>
 
-<div class="slider">
-  <div class="flexslider">
-    <ul class="slides">
-      <li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </li>
-      <li>
-        <h1>Pickles</h1>
-      </li>
-      <li>
-        <h1>Aaron</h1>
-      </li>
-      <li>
-        <h1>Nell</h1>
-      </li>
-    </ul>
+<section class="dark-section">
+  <div class="inner-wrapper">
+
+    <div class="slider">
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <p class="flex-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+          </li>
+          <li>
+            <p class="flex-text">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="custom-navigation">
+        <a href="#" class="flex-prev controls"><img src="images/left.png" alt=""></a>
+        <div class="custom-controls-container"></div>
+        <a href="#" class="flex-next controls"><img src="images/right.png" alt=""></a>
+      </div>
+    </div>
+
   </div>
-  <div class="custom-navigation">
-    <a href="#" class="flex-prev">Prev</a>
-    <div class="custom-controls-container"></div>
-    <a href="#" class="flex-next">Next</a>
-  </div>
-</div>
+</section>
 
 
 <!-- jQuery -->

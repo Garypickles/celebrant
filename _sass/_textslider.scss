@@ -1,0 +1,44 @@
+.slider{
+  position: relative;
+  margin: 0px 30px;
+  padding: 20px 40px;
+  width: 80%;
+  margin: 40px auto;
+  border: 1px solid $accent;
+    &:before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 1px solid $accent;
+  }
+}
+
+.flex-text{
+  color: #fff!important;
+  font-size: 18px;
+  text-decoration: none;
+}
+.custom-navigation{
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  .controls{
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    transform: translate(0px, -50%);
+  }
+  .flex-next{
+    right: -40px;
+  }
+  .flex-prev{
+    left: -40px;
+  }
+}
