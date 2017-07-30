@@ -1,14 +1,12 @@
 ---
 layout: default
 title: About
-herourl: http://fillmurray.com/1200/550
+hero: http://fillmurray.com/1200/550
 ---
-<div class="services-hero-image">
-  <img src= {{ herourl }} />
-</div>
+<div class="services-hero-image" style="background-image: url('{{layout.hero}}')"></div>
 
 <section>
-  <div class="inner-wrapper">
+  <div class="inner-wrapper service-page editable">
 
     {{content}}
 
