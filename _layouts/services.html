@@ -1,11 +1,16 @@
 ---
 layout: default
 title: About
+herourl: http://fillmurray.com/1200/550
 ---
+<div class="services-hero-image">
+  <img src= {{ herourl }} />
+</div>
+
 <section>
   <div class="inner-wrapper">
 
-    {% include services.html %}
+    {{content}}
 
   </div>
 </section>
@@ -13,7 +18,7 @@ title: About
 <section>
   <div class="inner-wrapper">
 
-    {{content}}
+    {% include services.html %}
 
   </div>
 </section>
