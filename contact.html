@@ -4,9 +4,30 @@ title: Contact Geff Heaton
 ---
 
 <section>
-  <div class="inner-wrapper">
+  <div class="inner-wrapper narrow-wrapper">
+    <img src="images/Jeff-Heaton-about-me.png/" alt="Jeff Heaton">
 
-    <h1>Contact Geff Heaton</h1>
+    <h2>Contact Geff Heaton</h2>
+
+    <form method="post" action="/success.html">
+
+      <div class="contact-form">
+        <!-- <label>Name</label> -->
+        <input class="name" type="text" placeholder="Name" name="name">
+        <!-- <label>Email Address</label> -->
+        <input type="text" placeholder="Email" name="email">
+
+
+        <textarea class="textarea" rows="6" name="message" placeholder="Message"></textarea>
+
+        <!-- Hidden & Honey Pot -->
+        <input type="hidden" name="_to" value="sales@example.com,support@example.com">
+        <input type="hidden" name="_cc" value="sales.tracker@example.com">
+        <input type="text" name="_gotcha" style="display: none;">
+
+        <input class="submit-button" type="submit" value="Send Message">
+      </div>
+    </form>
 
   </div>
 </section>

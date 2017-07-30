@@ -1,0 +1,50 @@
+form{
+  width: 100%;
+
+  input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid $accent;
+  }
+  .submit-button{
+    background-color: $accent;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    &:hover{
+      background-color: darken($accent, 10%);
+      color: white;
+    }
+  }
+}
+.contact-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  .textarea{
+    grid-column: 1 / -1;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contact-form{
+    display: block;
+  }
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #000;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #000;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #000;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #000;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #000;
+}

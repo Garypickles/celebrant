@@ -21,6 +21,7 @@ $sitewidth: 1200px;
 @import "nav";
 @import "services";
 @import "aboutme";
+@import "form";
 @import "footer";
 @import "flexslider";
 @import "textslider";
@@ -48,6 +49,10 @@ h2{
   max-width: $sitewidth;
   margin: 0 auto;
   padding: 40px 20px;
+}
+.narrow-wrapper{
+  max-width: 800px;
+  text-align: center;
 }
 // *{
 //   border: 1px solid red;
