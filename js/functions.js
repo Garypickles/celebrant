@@ -1,3 +1,11 @@
+$(document).ready(function() {
+
+	$( "#services" ).click(function( event ) {
+	  event.preventDefault();
+	});
+
+});
+
 // Double Tap Go Js
 
 /*

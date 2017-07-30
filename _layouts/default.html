@@ -5,8 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/css/main.css">
+  <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+  <!-- Functions JS -->
   <script type="text/javascript" src="js/functions.js"></script>
-  <title>Life Celebrant</title>
+
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <title>{{page.title}}</title>
 </head>
 <body>
   <div class="header">
@@ -25,28 +33,30 @@
         <a href="#nav" title="Show navigation"><img src="images/open-menu.png" alt=""></a>
         <a href="#" title="Hide navigation"><img src="images/close-menu.png" alt=""></a>
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li>
-            <a href="/" aria-haspopup="true">Services</a>
+            <a href="" aria-haspopup="true" id="services">Services</a>
             <ul>
-              <li><a href="/">Weddings</a></li>
-              <li><a href="/">Funerals</a></li>
-              <li><a href="/">Naming Ceremonies</a></li>
-              <li><a href="/">Other Life Events</a></li>
+              <li><a href="weddings.html">Weddings</a></li>
+              <li><a href="funerals.html">Funerals</a></li>
+              <li><a href="naming.html">Naming Ceremonies</a></li>
+              <li><a href="life-events.html">Other Life Events</a></li>
             </ul>
           </li>
           <li>
-            <a href="/">Testimomials</a>
+            <a href="testimomials.html">Testimomials</a>
           </li>
-          <li><a href="/">About</a></li>
-          <li><a href="/">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
       <!-- End navigation -->
     </div>
 
   </div>
+
   {{content}}
+
   <div class="footer">
     <div class="inner-wrapper footer-wrapper">
       <div class="footer-img">
@@ -61,5 +71,31 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript">
+    $(window).load(function(){
+
+      $('#heroslider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        directionNav: false,
+        slideshowSpeed: 4000,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+
+      $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        controlsContainer: $(".custom-controls-container"),
+        customDirectionNav: $(".custom-navigation a"),
+        start: function(slider){
+          // $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+  
 </body>
 </html>
