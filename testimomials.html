@@ -4,9 +4,14 @@ title: Testimomials
 ---
 
 <section>
-  <div class="inner-wrapper">
+  <div class="inner-wrapper narrow-wrapper">
 
-    <h1>Testimomials</h1>
+    {% for member in site.data.testimonials %}
+      <div class="testimonial-wrapper">
+        <p>{{ member.text }}</p>
+        <h2>{{ member.name }}</h2>
+      </div>
+    {% endfor %}
 
   </div>
 </section>
