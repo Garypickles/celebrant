@@ -23,17 +23,17 @@
   color: $accent;
   }
 }
-#nav a:hover{
-  &:after{
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 0px;
-  height: 3px;
-  width: 100%;
-  background-color: $accent;
-  }
-}
+// #nav a:hover{
+//   &:after{
+//   content: "";
+//   position: absolute;
+//   bottom: -8px;
+//   left: 0px;
+//   height: 3px;
+//   width: 100%;
+//   background-color: $accent;
+//   }
+// }
 #nav .cc-active:after{
   content: "";
   position: absolute;
