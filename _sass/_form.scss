@@ -11,6 +11,8 @@ form{
     background-color: $accent;
     text-transform: uppercase;
     letter-spacing: 3px;
+    // grid-column: span 2;
+    grid-column: 2 / -2;
     &:hover{
       background-color: darken($accent, 10%);
       color: white;
@@ -19,11 +21,14 @@ form{
 }
 .contact-form{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   .textarea{
     grid-column: 1 / -1;
+  }
+  .name, .email{
+    grid-column: span 2;
   }
 }
 @media only screen and (max-width: 600px) {
