@@ -1,10 +1,11 @@
 .testimonial-wrapper{
   margin-bottom: 60px;
   position: relative;
+  overflow: hidden;
   &:after{
     content: "";
     position: absolute;
-    bottom: -20px;
+    bottom: 0px;
     left: 50%;
     transform: translate(-50%,0px);
     width: 80%;
