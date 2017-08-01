@@ -31,6 +31,7 @@ title: Contact Geff Heaton
 
   </div>
 </section>
+
 <script type="text/javascript">
 // Helper function to get form data in the supported format
 function getFormDataString(formEl) {
@@ -63,6 +64,7 @@ var request = new XMLHttpRequest();
 request.addEventListener("load", function () {
 if (request.status === 302) { // CloudCannon redirects on success
 // It worked
+console.log "gary";
 }
 });
 
